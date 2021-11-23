@@ -6,7 +6,12 @@ import org.springframework.web.bind.annotation.RequestMapping;
 @Controller
 public class MyController {
 
-    @RequestMapping("/dodo")
+    @RequestMapping("/1")
+    public String showIndex() {
+        return "index";
+    }
+
+    @RequestMapping("/do")
     public String showFirstView() {
         return "first-view";
     }
