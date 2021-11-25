@@ -11,14 +11,15 @@
     	http://www.springframework.org/schema/mvc
         http://www.springframework.org/schema/mvc/spring-mvc.xsd">
 
-    <context:component-scan base-package="main.java.spring.mvc" />
+    <context:component-scan base-package="main.java.spring.mvc"/>
 
     <mvc:annotation-driven/>
 
     <bean
-            class="org.springframework.web.servlet.view.InternalResourceViewResolver">
-        <property name="prefix" value="webapp/WEB-INF/view" />
-        <property name="suffix" value=".jsp" />
+        class="org.springframework.web.servlet.view.InternalResourceViewResolver">
+        <property name="suffix" value=".jsp"/>
+
+
     </bean>
 
 </beans>

@@ -27,4 +27,8 @@ public class MyController {
     }
 
 
+//    <property name="prefix" value="webapp/WEB-INF/view"  />
+//        <property name="suffix" value=".jsp" />
+
+
 }
