@@ -7,7 +7,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 public class MyController {
 
 
-    @RequestMapping("/")
+    @RequestMapping("/do")
     public String showFirstView() {
         return "first-view";
     }
@@ -21,10 +21,5 @@ public class MyController {
     public String showEmployeeDetails() {
         return "show-emp-details-view";
     }
-
-
-//    <property name="prefix" value="webapp/WEB-INF/view"  />
-//        <property name="suffix" value=".jsp" />
-
 
 }
