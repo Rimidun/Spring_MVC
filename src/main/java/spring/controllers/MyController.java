@@ -25,6 +25,9 @@ public class MyController {
         String empName = request.getParameter("employeeName");
         empName = "Mr. " + empName;
         model.addAttribute("nameAttribute", empName);
+        model.addAttribute("description", " - student from Russia");
+
+
         return "show-emp-details-view";
     }
 
