@@ -3,7 +3,7 @@
 
 <body>
 
-<h2>Hello World!</h2>
+<h2>Hello my friends!</h2>
 <br>
 <br>
 <a href="askDetails">Please write your details </a>
