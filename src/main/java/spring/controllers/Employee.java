@@ -5,8 +5,17 @@ public class Employee {
     private String surname;
     private int salary;
     private String department;
+    private String carBrand;
 
     public Employee() {
+    }
+
+    public String getCarBrand() {
+        return carBrand;
+    }
+
+    public void setCarBrand(String carBrand) {
+        this.carBrand = carBrand;
     }
 
     public String getName() {
@@ -48,6 +57,7 @@ public class Employee {
                 ", surname='" + surname + '\'' +
                 ", salary=" + salary +
                 ", department='" + department + '\'' +
+                ", carBrand='" + carBrand + '\'' +
                 '}';
     }
 }
