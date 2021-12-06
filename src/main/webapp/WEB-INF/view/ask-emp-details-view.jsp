@@ -18,7 +18,11 @@ Surname <form:input path="surname"/>
 Salary <form:input path="salary"/>
 <br>
 <br>
-Department <form:input path="department"/>
+Department <form:select path="department">
+<form:option value="Information Technology" label="IT"/>
+<form:option value="Recruitment" label="HR"/>
+<form:option value="Sales" label="Sales"/>
+</form:select>
 <br>
 <br>
 <input type="submit" value="OK"/>

@@ -41,10 +41,13 @@ public class MyController {
 
         String name = employee.getName();
         employee.setName("Mr " + name);
+
         String surname = employee.getSurname();
         employee.setSurname(surname + "!");
+
         int salary = employee.getSalary();
         employee.setSalary(salary * 2);
+
         String department = employee.getDepartment();
         employee.setDepartment("TOP " + department);
 
