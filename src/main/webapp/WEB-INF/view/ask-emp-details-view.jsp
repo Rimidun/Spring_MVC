@@ -45,6 +45,10 @@ Phone <form:input path="phoneNumber"/>
 <form:errors path="phoneNumber" cssStyle="color: #ff0000;"/>
 <br>
 <br>
+Email <form:input path="email"/>
+<form:errors path="email" cssStyle="color: #ff0000;"/>
+<br>
+<br>
 <input type="submit" value="OK"/>
 
 </form:form>

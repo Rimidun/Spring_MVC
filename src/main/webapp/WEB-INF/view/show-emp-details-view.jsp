@@ -22,6 +22,8 @@ Your car: ${employee.carBrand}
 Knowledge of language(s): ${employee.language}
 <br>
 Your phone: ${employee.phoneNumber}
+<br>
+Your email: ${employee.email}
 
 
 </body>
