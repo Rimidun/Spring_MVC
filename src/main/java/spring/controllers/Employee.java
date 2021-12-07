@@ -2,6 +2,7 @@ package spring.controllers;
 
 import javax.validation.constraints.NotBlank;
 import javax.validation.constraints.NotEmpty;
+import javax.validation.constraints.Pattern;
 import javax.validation.constraints.Size;
 
 public class Employee {
@@ -14,8 +15,18 @@ public class Employee {
     private String department;
     private String carBrand;
     private String language;
+    @Pattern(regexp = "\\d{1}-\\d{3}-\\d{3}-\\d{2}-\\d{2}", message = "enter correct phone number")
+    private String phoneNumber;
 
     public Employee() {
+    }
+
+    public String getPhoneNumber() {
+        return phoneNumber;
+    }
+
+    public void setPhoneNumber(String phoneNumber) {
+        this.phoneNumber = phoneNumber;
     }
 
     public String getCarBrand() {
@@ -75,6 +86,7 @@ public class Employee {
                 ", department='" + department + '\'' +
                 ", carBrand='" + carBrand + '\'' +
                 ", language='" + language + '\'' +
+                ", phoneNumber=" + phoneNumber +
                 '}';
     }
 }

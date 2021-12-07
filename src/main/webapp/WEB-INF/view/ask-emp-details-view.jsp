@@ -41,6 +41,10 @@ RUS <form:checkbox path="language" value="Russian "/>
 FR <form:checkbox path="language" value="French"/>
 <br>
 <br>
+Phone <form:input path="phoneNumber"/>
+<form:errors path="phoneNumber" cssStyle="color: #ff0000;"/>
+<br>
+<br>
 <input type="submit" value="OK"/>
 
 </form:form>

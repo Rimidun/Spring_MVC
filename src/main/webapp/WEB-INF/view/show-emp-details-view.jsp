@@ -20,6 +20,8 @@ Your department: ${employee.department}
 Your car: ${employee.carBrand}
 <br>
 Knowledge of language(s): ${employee.language}
+<br>
+Your phone: ${employee.phoneNumber}
 
 
 </body>
