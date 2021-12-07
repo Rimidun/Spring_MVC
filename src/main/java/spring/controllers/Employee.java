@@ -1,7 +1,14 @@
 package spring.controllers;
 
+import javax.validation.constraints.NotBlank;
+import javax.validation.constraints.NotEmpty;
+import javax.validation.constraints.Size;
+
 public class Employee {
+
+    @Size(min = 2, max = 20, message = "name must be min 2 symbol")
     private String name;
+    @NotBlank(message = "fill in the surname")
     private String surname;
     private int salary;
     private String department;

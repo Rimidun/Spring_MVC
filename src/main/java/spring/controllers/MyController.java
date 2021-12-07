@@ -2,11 +2,11 @@ package spring.controllers;
 
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
+import org.springframework.validation.BindingResult;
 import org.springframework.web.bind.annotation.ModelAttribute;
 import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RequestParam;
 
-import javax.servlet.http.HttpServletRequest;
+import javax.validation.Valid;
 
 @Controller
 @RequestMapping("/employee")
@@ -37,21 +37,27 @@ public class MyController {
 
 
     @RequestMapping("/showDetails")
-    public String showEmployeeDetails(@ModelAttribute("employee") Employee employee){
+    public String showEmployeeDetails(@Valid @ModelAttribute("employee") Employee employee, BindingResult bindingResult) {
 
-        String name = employee.getName();
-        employee.setName("Mr " + name);
-
-        String surname = employee.getSurname();
-        employee.setSurname(surname + "!");
-
-        int salary = employee.getSalary();
-        employee.setSalary(salary * 2);
-
-        String department = employee.getDepartment();
-        employee.setDepartment("TOP " + department);
+        if (bindingResult.hasErrors()) {
+            return "ask-emp-details-view";
+        } else {
+            return "show-emp-details-view";
+        }
 
 
-        return "show-emp-details-view";
+//        String name = employee.getName();
+//        employee.setName("Mr " + name);
+//
+//        String surname = employee.getSurname();
+//        employee.setSurname(surname + "!");
+//
+//        int salary = employee.getSalary();
+//        employee.setSalary(salary * 2);
+//
+//        String department = employee.getDepartment();
+//        employee.setDepartment("TOP " + department);
+
+
     }
 }
