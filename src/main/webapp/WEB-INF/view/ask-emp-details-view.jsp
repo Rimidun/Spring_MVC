@@ -26,9 +26,17 @@ Department <form:select path="department">
 <br>
 <br>
 Which car do you want?
+<br>
 BMW <form:radiobutton path="carBrand" value="BMW"/>
 MB <form:radiobutton path="carBrand" value="Mercedes-benz "/>
 Audi <form:radiobutton path="carBrand" value="Audi"/>
+<br>
+<br>
+What language(s) do you speak?
+<br>
+EN <form:checkbox path="language" value="English" />
+RUS <form:checkbox path="language" value="Russian "/>
+FR <form:checkbox path="language" value="French"/>
 <br>
 <br>
 <input type="submit" value="OK"/>

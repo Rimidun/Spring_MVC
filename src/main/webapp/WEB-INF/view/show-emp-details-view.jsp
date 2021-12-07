@@ -18,6 +18,8 @@ Your salary: ${employee.salary}
 Your department: ${employee.department}
 <br>
 Your car: ${employee.carBrand}
+<br>
+Knowledge of language(s): ${employee.language}
 
 
 </body>

@@ -6,6 +6,7 @@ public class Employee {
     private int salary;
     private String department;
     private String carBrand;
+    private String language;
 
     public Employee() {
     }
@@ -50,6 +51,14 @@ public class Employee {
         this.department = department;
     }
 
+    public String getLanguage() {
+        return language;
+    }
+
+    public void setLanguage(String language) {
+        this.language = language;
+    }
+
     @Override
     public String toString() {
         return "Employee{" +
@@ -58,6 +67,7 @@ public class Employee {
                 ", salary=" + salary +
                 ", department='" + department + '\'' +
                 ", carBrand='" + carBrand + '\'' +
+                ", language='" + language + '\'' +
                 '}';
     }
 }
